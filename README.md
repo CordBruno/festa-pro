@@ -6,7 +6,8 @@ import google.generativeai as genai
 st.set_page_config(page_title="Festa Pro | Concierge", page_icon="🥂", layout="wide")
 
 st.markdown("""
-    <style>
+  [Uploading requirements.txt…]()
+  <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
     html, body, [class*="st-"] { font-family: 'Inter', sans-serif; }
     .main { background-color: #F8FAFC; }
@@ -35,7 +36,7 @@ def get_safe_model_name(api_key):
     except:
         return "models/gemini-1.5-flash"
 
-CHAVE_API = "AIzaSyC3_FugV7YHUN0w2IU9CUy9F1qQOlQPG1E"
+CHAVE_API = ""GOOGLE_API_KEY""
 modelo_oficial = get_safe_model_name(CHAVE_API)
 
 # 3. Sidebar Objetiva
