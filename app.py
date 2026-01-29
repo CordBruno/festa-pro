@@ -34,7 +34,8 @@ def get_safe_model_name(api_key):
     except:
         return "models/gemini-1.5-flash"
 
-CHAVE_API = "AIzaSyC3_FugV7YHUN0w2IU9CUy9F1qQOlQPG1E"
+# Agora o código está seguro. Ele não tem a chave, ele pede ao Streamlit.
+CHAVE_API = st.secrets["GOOGLE_API_KEY"]
 modelo_oficial = get_safe_model_name(CHAVE_API)
 
 # 3. Sidebar Objetiva
